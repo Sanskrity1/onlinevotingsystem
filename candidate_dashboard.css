@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f8f9fa;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+        background-color: #343a40;
+        color: white;
+        width: 260px;
+        height: 100vh;
+        padding-top: 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 25px;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: lightslategray;
+    padding-left: 28px; 
+    box-sizing: border-box;
+}
+
+.sidebar .logout-btn {
+    background-color: #383981;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+.sidebar .logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    top:45%;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}

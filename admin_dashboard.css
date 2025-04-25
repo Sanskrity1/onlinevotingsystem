@@ -1,0 +1,143 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+}
+
+.navbar {
+    background-color: #343a40;
+    color: white;
+    width: 260px;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar ul li {
+    width: 100%;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 25px;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: lightslategray;
+    padding-left: 28px; 
+    box-sizing: border-box;
+
+}
+
+.main-content {
+    margin-left: 50px; 
+    padding: 50px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center;
+}
+
+h3 {
+    color: #212529;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; 
+    margin-top: -50px; 
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: lightgray;
+    color: white;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+        height: auto; 
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
